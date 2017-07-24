@@ -8,19 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		88CB3CD91F25C0810038B8FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB3CD81F25C0810038B8FA /* AppDelegate.swift */; };
-		88CB3CDB1F25C0810038B8FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB3CDA1F25C0810038B8FA /* ViewController.swift */; };
 		88CB3CDD1F25C0810038B8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CB3CDC1F25C0810038B8FA /* Assets.xcassets */; };
 		88CB3CE01F25C0810038B8FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CB3CDE1F25C0810038B8FA /* Main.storyboard */; };
+		88CB3CF01F25C3BB0038B8FA /* ToolbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB3CEF1F25C3BB0038B8FA /* ToolbarViewController.swift */; };
+		88CB3CF21F25C3CD0038B8FA /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB3CF11F25C3CD0038B8FA /* ChannelViewController.swift */; };
+		88CB3CF41F25C3DD0038B8FA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB3CF31F25C3DD0038B8FA /* ChatViewController.swift */; };
+		88CB3CF61F25C4C00038B8FA /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB3CF51F25C4C00038B8FA /* MainWindowController.swift */; };
+		88CB3CF81F25C5BD0038B8FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB3CF71F25C5BD0038B8FA /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		88CB3CD51F25C0810038B8FA /* Ghitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ghitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88CB3CD81F25C0810038B8FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88CB3CDA1F25C0810038B8FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88CB3CDC1F25C0810038B8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88CB3CDF1F25C0810038B8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88CB3CE11F25C0810038B8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88CB3CE21F25C0810038B8FA /* Ghitter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ghitter.entitlements; sourceTree = "<group>"; };
+		88CB3CEF1F25C3BB0038B8FA /* ToolbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarViewController.swift; sourceTree = "<group>"; };
+		88CB3CF11F25C3CD0038B8FA /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		88CB3CF31F25C3DD0038B8FA /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		88CB3CF51F25C4C00038B8FA /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		88CB3CF71F25C5BD0038B8FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +94,10 @@
 		88CB3CEA1F25C1680038B8FA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				88CB3CDA1F25C0810038B8FA /* ViewController.swift */,
+				88CB3CEF1F25C3BB0038B8FA /* ToolbarViewController.swift */,
+				88CB3CF11F25C3CD0038B8FA /* ChannelViewController.swift */,
+				88CB3CF31F25C3DD0038B8FA /* ChatViewController.swift */,
+				88CB3CF51F25C4C00038B8FA /* MainWindowController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -108,6 +119,7 @@
 		88CB3CED1F25C1850038B8FA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				88CB3CF71F25C5BD0038B8FA /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -189,8 +201,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88CB3CDB1F25C0810038B8FA /* ViewController.swift in Sources */,
+				88CB3CF01F25C3BB0038B8FA /* ToolbarViewController.swift in Sources */,
+				88CB3CF21F25C3CD0038B8FA /* ChannelViewController.swift in Sources */,
+				88CB3CF41F25C3DD0038B8FA /* ChatViewController.swift in Sources */,
 				88CB3CD91F25C0810038B8FA /* AppDelegate.swift in Sources */,
+				88CB3CF61F25C4C00038B8FA /* MainWindowController.swift in Sources */,
+				88CB3CF81F25C5BD0038B8FA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +379,7 @@
 				88CB3CE71F25C0810038B8FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
